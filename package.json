@@ -1,0 +1,21 @@
+{
+  "name": "vibe",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "dev": "pnpm -C apps/studio dev",
+    "db:up": "docker compose -f docker/compose.yml up -d",
+    "db:down": "docker compose -f docker/compose.yml down",
+    "prisma:gen": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "runner:dev": "pnpm -C apps/runner dev"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "pnpm": "^10.30.1"
+  }
+}

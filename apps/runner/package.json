@@ -1,0 +1,14 @@
+{
+  "name": "@vibe/runner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "@vibe/shared": "workspace:*",
+    "bullmq": "^5.16.0",
+    "dotenv": "^16.4.5"
+  }
+}
